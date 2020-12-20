@@ -1,0 +1,16 @@
+[
+    {
+        "uuid": "0000-0000-0000-0000",
+        "element": "Room",
+        "dimensions": [0,0],
+        "parent": "",
+        "children": ["0000-0000-0000-0001"]
+    },
+    {
+        "uuid": "0000-0000-0000-0001",
+        "element": "Blackboard",
+        "dimensions": [1000,1000],
+        "parent": "0000-0000-0000-0000",
+        "children": []
+    }
+]
