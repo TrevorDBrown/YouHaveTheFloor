@@ -1,8 +1,10 @@
 [
     {
-        "queryName": "",
-        "queryType": "",
-        "queryTemplate": "",
-        "queryInputs": []
+        "queryName": "GetRoomDataByRoomPublicID",
+        "queryType": "SELECT",
+        "queryTemplate": "SELECT rt.room_type_name, r.room_public_id, r.room_shorthand, r.room_title, r.room_desc, r.room_welcome, rd.room_data FROM YHTF.YHTF_ROOM r JOIN YHTF.YHTF_ROOM_TYPE rt ON (r.room_type_key = rt.room_type_key) LEFT JOIN YHTF.YHTF_ROOM_DATA rd ON (r.room_key = rd.room_key) WHERE r.room_public_id ~RoomPublicID",
+        "queryInputs": [
+            "RoomPublicID"
+        ]
     }
 ]
