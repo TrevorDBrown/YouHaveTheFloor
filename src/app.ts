@@ -5,6 +5,5 @@
     app.ts - the entry point for the application.
 */
 
-const api = require('./modules/api/api');                       // A publicly exposed API for creating sessions.
 const clientServer = require('./modules/servers/client');       // The web server for the client interface.
 const adminServer = require('./modules/servers/admin');         // The web server for the administrative interface.
