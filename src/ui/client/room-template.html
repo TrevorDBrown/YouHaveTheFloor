@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Room - You Have The Floor (YHTF)</title>
+        <script type="application/javascript" src="./../shared/jquery/jquery.min.js"></script>
+        <script type="application/javascript" src="./../shared/bootstrap/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="./../shared/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="./../shared/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./../css/room.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="yhtf-header" class="container-fluid yhtf-default-room-theme yhtf-default-room-title">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h4>Test Room</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Body -->
+        <div id="yhtf-body" class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <!-- Action Bar -->
+                    <div id="yhtf-action-bar" class="container-fluid">
+                        <div class="row text-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="yhtf-actions container">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <div class="yhtf-actions-buttons">
+                                                <span class="fas fa-plus"></span>
+                                                <span class="fas fa-minus"></span>
+                                                <span class="fas fa-inbox"></span>
+                                                <span class="fas fa-user"></span>
+                                                <span class="fas fa-angle-up"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="yhtf-main-view" class="container-fluid">
+                        <div class="yhtf-main-view-row row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                <h4>Participants</h4>
+                                <div class="yhtf-users-list">
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8 yhtf-participants-column">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card yhtf-user-card">
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                        <img src="./../images/tdbrown.jpg" class="yhtf-default-room-user-image"/>
+                                                        <span>Trevor D. Brown</span>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                        <div class="yhtf-user-actions">
+                                                            <span class="fas fa-microphone-slash"></span>
+                                                            <span class="fas fa-hand-paper"></span>
+                                                            <span class="fas fa-bell-slash"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TODO: figure out how to effectively prevent card cutoff without this hack. :) -->
+                                    <div>&nbsp;</div>
+                                    <div>&nbsp;</div>
+                                    <div>&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                                <h4>Board</h4>
+                                <div class="card yhtf-board">
+                                    <div class="container-fluid">
+                                        <div class="row yhtf-board-row">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 yhtf-board-column">
+                                                <div class="card yhtf-agenda-card">
+                                                    <div class="card-header yhtf-default-room-theme">
+                                                        Agenda
+                                                    </div>
+                                                    <ul class="list-group list-group-flush yhtf-agenda-card-list">
+                                                        <li class="list-group-item">Item 1</li>
+                                                        <li class="list-group-item">Item 2</li>
+                                                        <li class="list-group-item">Item 3</li>
+                                                        <li class="list-group-item">Item 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 yhtf-board-column">
+                                                <!-- Blank Space -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div id="yhtf-footer" class="container-fluid yhtf-default-room-theme">
+            <div class="row text-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <span>&copy;2020 You Have The Floor. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
