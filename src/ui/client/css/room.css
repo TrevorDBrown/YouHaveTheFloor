@@ -1,0 +1,87 @@
+/*
+    YouHaveTheFloor (YHTF)
+    (c)2020 Trevor D. Brown. All rights reserved.
+
+    room.css - the CSS for Rooms with the application.
+*/
+
+.yhtf-default-room-theme {
+    color: #ffffff;
+    background-color: #00477F;
+}
+
+.yhtf-default-room-title {
+    text-align: center;
+    padding: 15px;
+}
+
+.yhtf-default-room-user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.yhtf-default-room-user-reaction {
+
+}
+
+.yhtf-default-room-user-response {
+    
+}
+
+.yhtf-board {
+    width: 100%;
+    height: 500px;
+}
+
+.yhtf-actions{
+    text-align: right;
+}
+
+.yhtf-actions-buttons {
+    font-size: xx-large;
+}
+
+#yhtf-header{
+
+}
+
+#yhtf-body {
+    overflow-y: hidden;
+    max-height: 100%;
+}
+
+#yhtf-footer{
+    position: absolute;
+    bottom: 0px;
+}
+
+#yhtf-main-view * {
+    max-height: 85vh;
+}
+
+.yhtf-users-list {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.yhtf-user-card {
+    margin: 10px 0px;
+}
+
+.yhtf-user-actions {
+    font-size: x-large;
+}
+
+.yhtf-board > .container-fluid, .yhtf-board-row, .yhtf-board-column {
+    height: 100%;
+}
+
+.yhtf-agenda-card {
+    
+}
+
+.yhtf-board-row, .yhtf-board-column {
+    width: 100%;
+    padding: 0px;
+}
