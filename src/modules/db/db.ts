@@ -6,8 +6,8 @@
     Note: this interface uses a query lookup system, to help prevent SQL injection.
 */
 
-import * as mysql from 'mysql';
-import * as async from 'async';
+import mysql = require('mysql');
+import async = require('async');
 import queryDictionary = require('./../../support/db/queries.json');
 import appConfig = require('./../../private/config.json')
 
@@ -69,39 +69,39 @@ function connectToDatabase (callback: (requestStatus: string, dbConnection: mysq
     var dbPassword: string = "";
     var dbDatabase: string = "";
 
-    var dbConfigLookup = appConfig.find(i => i.settingName === "dbConfig");
+    // var dbConfigLookup = appConfig.find(i => i.settingName === "dbConfig");
     
-    if (dbConfigLookup){
-        dbConfigLookup["parameters"].forEach(parameter => {
-            switch (parameter.parameterName) {
-                case "host": {
-                    dbHost = parameter.value;
-                    break;
-                }
-                case "port": {
-                    dbPort = parseInt(parameter.value);
-                    break;
-                }
-                case "username": {
-                    dbUsername = parameter.value;
-                    break;
-                }
-                case "password": {
-                    dbPassword = parameter.value;
-                    break;
-                }
-                case "database": {
-                    dbDatabase = parameter.value;
-                    break;
-                }
-                default: {
-                    console.log("Error - parameter not defined.");
-                    break;
-                }
+    // if (dbConfigLookup){
+    //     dbConfigLookup["parameters"].forEach(parameter => {
+    //         switch (parameter.parameterName) {
+    //             case "host": {
+    //                 dbHost = parameter.value;
+    //                 break;
+    //             }
+    //             case "port": {
+    //                 dbPort = parseInt(parameter.value);
+    //                 break;
+    //             }
+    //             case "username": {
+    //                 dbUsername = parameter.value;
+    //                 break;
+    //             }
+    //             case "password": {
+    //                 dbPassword = parameter.value;
+    //                 break;
+    //             }
+    //             case "database": {
+    //                 dbDatabase = parameter.value;
+    //                 break;
+    //             }
+    //             default: {
+    //                 console.log("Error - parameter not defined.");
+    //                 break;
+    //             }
                     
-            }
-        });
-    }
+    //         }
+    //     });
+    // }
 
     const dbConnection = mysql.createConnection({
         host: dbHost,
@@ -167,7 +167,7 @@ function queryLookup (queryName: string, callback: (status: string, queryObject:
 } 
 
 // Publicly exposed function for query calls
-export function executeQuery (queryName: string, callback: (requestStatus: string, queryFound?: QueryResult, error?: Error) => void, queryInput?: [{field: string; value: string;}]): void {
+export function executeQuery (environment: string, queryName: string, callback: (requestStatus: string, queryFound?: QueryResult, error?: Error) => void, queryInput?: [{field: string; value: string;}]): void {
     var newQuery: Query;
     var queryResponse: QueryResult;
     var dbConnection: mysql.Connection;
